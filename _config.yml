@@ -6,4 +6,4 @@ minima:
     - blogs/blogs.md
 url: https://zhaoyuesun.github.io/homepage/
 disqus:
-    shortname: my_disqus_shortname
+    shortname: zhaoyuesun-github-io
