@@ -4,6 +4,12 @@ minima:
   header_pages:
     - index.md
     - blogs/blogs.md
-url: https://zhaoyuesun.github.io
-disqus:
-    shortname: zhaoyuesun-github-io
+# url: https://zhaoyuesun.github.io
+# disqus:
+#     shortname: zhaoyuesun-github-io
+utterances:
+  repo: "ZhaoyueSun/homepage"
+  issue-term: "pathname"
+  label: "Comment"
+  theme: "github-light"
+
