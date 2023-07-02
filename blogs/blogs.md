@@ -9,6 +9,8 @@ permalink: /homepage/blogs/
         {% if post.categories contains 'blogs' %}
             {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
         <li>
+        <!-- <span>{{ post.date | date_to_string }} &raquo;</span>
+        <a href="{{ post.url }}">{{ post.title }}</a> -->
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
