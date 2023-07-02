@@ -4,6 +4,6 @@ minima:
   header_pages:
     - index.md
     - blogs/blogs.md
-url: https://zhaoyuesun.github.io/homepage/
+url: https://zhaoyuesun.github.io
 disqus:
     shortname: zhaoyuesun-github-io
