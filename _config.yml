@@ -1,2 +1,5 @@
 name: Zhaoyue Sun
 theme: minima
+header_pages:
+  - index.md
+  - Blogs/index.md
