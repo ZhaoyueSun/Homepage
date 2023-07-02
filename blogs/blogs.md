@@ -1,7 +1,7 @@
 ---
 title: Blogs
 layout: page
-# permalink: /homepage/blogs/
+permalink: /homepage/blogs/
 ---
 
 <div class="blogs">
