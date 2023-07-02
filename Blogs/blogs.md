@@ -1,3 +1,9 @@
+---
+title: Blogs
+layout: page
+permalink: /blog/
+---
+
 {% for post in site.posts %}
     {% if post.categories contains 'blog' %}
         {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}

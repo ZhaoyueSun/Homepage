@@ -3,4 +3,4 @@ theme: minima
 minima:
   header_pages:
     - index.md
-    - blogs.md
+    - Blogs/blogs.md
