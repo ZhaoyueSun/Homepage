@@ -81,7 +81,7 @@ Some other papers found related but have not read yet:
 
 
 
-AI alignment is quite a large topic that many studies should be involved in. Based on the depth and breadth of my current reading, the above discussion may not be accurate and comprehensive enough. There is a [forum](https://www.alignmentforum.org/) related to AI alignment that provides some discussion on this, and I specifically highlight this [post](https://www.alignmentforum.org/posts/QBAjndPuFbhEXKcCr/my-understanding-of-what-everyone-in-technical-alignment-is) which summarises what industrial organizations are doing in this field. If you suggest any other related materials, please leave your comments.
+AI alignment is quite a large topic that many studies should be involved in. Based on the depth and breadth of my current reading, the above discussion may not be accurate and comprehensive enough. There is a [forum](https://www.alignmentforum.org/) related to AI alignment that provides some discussion on this topic, and I specifically highlight this [post](https://www.alignmentforum.org/posts/QBAjndPuFbhEXKcCr/my-understanding-of-what-everyone-in-technical-alignment-is) which summarises what industrial organizations are doing in this field. If you suggest any other related materials, please leave your comments.
 
 
 
