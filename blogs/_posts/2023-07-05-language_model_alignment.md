@@ -3,17 +3,15 @@ title: "Introduction to Language Model Alignment"
 date: 2023-07-05
 ---
 
-
-
-# Introduction
+## Introduction
 
 Alignment, within the context of AI safety, refers to adjusting AI systems' behaviours to align with human values, which typically involves tuning the model to enhance the desired behaviours and suppress undesired ones. [Askell et al. (2021)](https://arxiv.org/pdf/2112.00861.pdf) define an AI as "aligned" if it is helpful, honest and harmless (HHH). This essay aims to make a primary investigation of relevant literature on AI alignment, with a specific focus on techniques applied to language models.
 
-# Current Work on LM Alignment
+### Current Work on LM Alignment
 
 Based on my initial exploration of this field, I roughly classify current research into three main categories: Data-based, Reinforcement Learning (RL)-based and Interpretation-based approaches.
 
-## Data-based View
+### Data-based View
 
 Instruction-tuning ([Ouyang et al., 2022](https://arxiv.org/pdf/2203.02155.pdf)), which involves fine-tuning the model with specific instructions, is considered helpful for language model alignment compared to purely self-supervised pre-training. Setting aside the use of Reinforcement Learning from Human Feedback (RLHF) as seen in InstructGPT, [Chung et al.(2022)](https://arxiv.org/pdf/2210.11416.pdf) demonstrates that when fine-tuning the PALM and T5 models on various tasks using instructions (Flan-PALM, Flan-T5), it results in reduced responses of toxicity and bias.
 
@@ -29,7 +27,7 @@ In addition to fine-tuning the model with instructions, [Askell et al. (2021)](h
 
 To summarize, while working on the data to mitigate harm can be a direct approach to improve alignment, models can still face distribution shifts during further development. Furthermore, it remains worthwhile to explore more effective methods of generating and utilizing such data in future studies.
 
-## RL-based View
+### RL-based View
 
 The most well-known RL-based alignment technique might be [Reinforcement Learning from Human Feedback](https://arxiv.org/pdf/1706.03741.pdf) (RLHF) from OpenAI. The fundamental concept behind it is to learn a reward function based on human preferences and simultaneously train a policy to optimize the predicted reward. OpenAI employs this idea in the training of [InstructGPT](https://arxiv.org/pdf/2203.02155.pdf), as outlined in Figure 2. RLHF is utilized in steps 2 and 3, in which they first collect annotations of rankings for model-generated response and finetune a reward model based on the ranking labels, then use proximal policy optimization (PPO) to optimize the language model against the reward model. A similar process is also used for the training of ChatGPT. 
 
@@ -45,7 +43,7 @@ A potential challenge with RLHF is that not all tasks are easily evaluable by hu
 
 <!-- [Aligning Generative Language Models with Human Values](https://aclanthology.org/2022.findings-naacl.18.pdf) -->
 
-## Interpretation-based View
+### Interpretation-based View
 
 Another possible way for alignment (from a very high level) is to identify how harmful knowledge is stored in the model and directly remove them by editing the parameters. Although this may sound too idealistic at this time, strengthening the research on the interpretation of the model will undoubtedly help to improve the subsequent alignment design work. I haven't read much in this direction, but the following work might be related:
 
@@ -54,7 +52,7 @@ Another possible way for alignment (from a very high level) is to identify how h
 [Meng et al.(2023)](https://arxiv.org/pdf/2202.05262.pdf) leverages causal analysis to track the causal effects of hidden state activation within GPT and proposes the Rank-One Model Editing(ROME) algorithm to modify FF weights for updating specific factual associations. Their experiments show the importance of mid-layer FF modules in storing factual associations and the feasibility of model editing by directly manipulating the computational mechanisms.
 
 
-# Concerns about LM alignment
+## Concerns about LM alignment
 
 Some recent studies raised some concerns regarding the potential limitations of current alignment strategies, based on high-level analysis. [Ngo et al.(2023)](https://arxiv.org/pdf/2209.00626.pdf) point out that pretraining AGI using self-supervised learning and finetuning with RLHF may lead to:
 * situationally-aware reward hacking that policies exploit human fallibility to gain high reward;
@@ -72,7 +70,7 @@ Specifically to LM alignment, [Wolf et al.(2023)](https://arxiv.org/pdf/2304.110
 These analyses are beneficial to guide the design of alignment approaches in future research. However, it is slightly regrettable that these works are only discussed from a high-level perspective, and more empirical experiments may be needed to support these points. 
 
 
-# Extended Reading
+## Extended Reading
 Some other papers found related but have not read yet:
 
 [Aligning Large Language Models through Synthetic Feedback(2023)](https://arxiv.org/pdf/2305.13735.pdf)
