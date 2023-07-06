@@ -31,8 +31,8 @@ To summarize, while working on the data to mitigate harm can be a direct approac
 
 The most well-known RL-based alignment technique might be [Reinforcement Learning from Human Feedback](https://arxiv.org/pdf/1706.03741.pdf) (RLHF) from OpenAI. The fundamental concept behind it is to learn a reward function based on human preferences and simultaneously train a policy to optimize the predicted reward. OpenAI employs this idea in the training of [InstructGPT](https://arxiv.org/pdf/2203.02155.pdf), as outlined in Figure 2. RLHF is utilized in steps 2 and 3, in which they first collect annotations of rankings for model-generated response and finetune a reward model based on the ranking labels, then use proximal policy optimization (PPO) to optimize the language model against the reward model. A similar process is also used for the training of ChatGPT. 
 
-![Illustration of the training process of InstructGPT](./assets/InstructGPT.png)
-
+<!-- ![Illustration of the training process of InstructGPT](./assets/InstructGPT.png) -->
+<img src="./assets/InstructGPT.png" alt="lasagna">
 *Figure 2. Illustration of the training process of InstructGPT.*
 
 
