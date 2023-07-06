@@ -7,7 +7,7 @@ date: 2023-07-05
 
 Alignment, within the context of AI safety, refers to adjusting AI systems' behaviours to align with human values, which typically involves tuning the model to enhance the desired behaviours and suppress undesired ones. [Askell et al. (2021)](https://arxiv.org/pdf/2112.00861.pdf) define an AI as "aligned" if it is helpful, honest and harmless (HHH). This essay aims to make a primary investigation of relevant literature on AI alignment, with a specific focus on techniques applied to language models.
 
-### Current Work on LM Alignment
+## Current Work on LM Alignment
 
 Based on my initial exploration of this field, I roughly classify current research into three main categories: Data-based, Reinforcement Learning (RL)-based and Interpretation-based approaches.
 
